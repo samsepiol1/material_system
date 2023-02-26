@@ -48,7 +48,7 @@ app.use('/api', apiRouter);
 // usando rotas de autenticação
 app.use('/auth', authRouter);
 // aplica o requireAuth middleware na raiz do site
-app.use('/', [requireAuth], indexRouter);
+app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
